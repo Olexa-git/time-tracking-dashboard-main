@@ -1,0 +1,184 @@
+@font-face {
+	font-family: rubic;
+	src: url("../fonts/Rubik_Regular.ttf") format("truetype");
+}
+* {
+	font-family: rubic;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+html {
+	background-color: hsl(226, 43%, 10%);
+}
+.container {
+	width: 900px;
+	height: 400px;
+	margin: 150px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 215px;
+}
+.report_title {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	position: relative;
+}
+.report_title_top_layer {
+	position: absolute;
+	border-radius: 15px;
+	width: 200px;
+	left: 10px;
+	height: 285px;
+	background-color: hsl(246, 80%, 60%);
+	padding: 25px 0 0 25px;
+	z-index: 1;
+}
+.report_title_top_layer img {
+	width: 65px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: white;
+}
+.report_title_top_layer h3 {
+	margin-top: 25px;
+	color: hsl(236, 100%, 87%);
+	font-size: 12px;
+}
+.report_title_top_layer h1 {
+	margin-top: 10px;
+	color: lightgray;
+	font-size: 30px;
+	font-weight: 100px;
+}
+.report_title_bottom_layer {
+	border-radius: 15px;
+	width: 200px;
+	height: 150px;
+	background-color: hsl(235, 46%, 20%);
+	position: absolute;
+	top: 255px;
+	left: 10px;
+	z-index: 0;
+	color: hsl(235, 45%, 61%);
+	padding: 40px 0 0 25px;
+}
+.report_title_bottom_layer p {
+	font-size: 14px;
+	margin-top: 14px;
+}
+.white_color {
+	color: hsl(236, 100%, 87%);
+}
+.report_title_bottom_layer p:hover {
+	color: hsl(236, 100%, 87%);
+	cursor: pointer;
+}
+.life_sphere_box {
+	position: relative;
+}
+.work_bottom_layer,
+.play_bottom_layer,
+.study_bottom_layer,
+.exercise_bottom_layer,
+.social_bottom_layer,
+.self_care_bottom_layer {
+	border-radius: 15px;
+	width: 200px;
+	height: 70px;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	overflow: hidden;
+}
+.work_bottom_layer {
+	background-color: hsl(15, 100%, 70%);
+}
+.play_bottom_layer {
+	background-color: hsl(195, 74%, 62%);
+}
+.study_bottom_layer {
+	background-color: hsl(348, 100%, 68%);
+}
+.exercise_bottom_layer {
+	background-color: hsl(145, 58%, 55%);
+}
+.social_bottom_layer {
+	background-color: hsl(264, 64%, 52%);
+}
+.self_care_bottom_layer {
+	background-color: hsl(43, 84%, 65%);
+}
+.work_bottom_layer img,
+.play_bottom_layer img,
+.study_bottom_layer img,
+.exercise_bottom_layer img,
+.social_bottom_layer img,
+.self_care_bottom_layer img {
+	position: absolute;
+	right: 15px;
+}
+.work_bottom_layer img {
+	width: 60px;
+	top: -7px;
+}
+.play_bottom_layer img {
+	width: 60px;
+	top: -5px;
+}
+.study_bottom_layer img {
+	width: 60px;
+	top: -5px;
+}
+.exercise_bottom_layer img {
+	width: 60px;
+	top: -2px;
+}
+.social_bottom_layer img {
+	width: 60px;
+	top: -11px;
+}
+.self_care_bottom_layer img {
+	width: 50px;
+	top: -7px;
+}
+.life_sphere_box_top_layer {
+	border-radius: 15px;
+	width: 200px;
+	height: 155px;
+	background-color: hsl(235, 46%, 20%);
+	position: absolute;
+	left: 10px;
+	top: 35px;
+	z-index: 1;
+	color: hsl(236, 100%, 87%);
+	padding-left: 25px;
+}
+.life_sphere_box_top_layer:hover {
+	background-color: hsl(235, 46%, 30%);
+	cursor: pointer;
+}
+.life_sphere_box_top_layer img {
+	position: absolute;
+	top: 25px;
+	left: 160px;
+	width: 12px;
+}
+.life_sphere_box_top_layer img:hover{
+	width: 16px;
+}
+.top_layer_title {
+	font-size: 14px;
+	margin-top: 18px;
+}
+.top_layer_units {
+	font-size: 45px;
+	margin: 20px 0 10px 0;
+}
+.top_layer_previous_value {
+	font-size: 12px;
+	margin-top: 12px;
+}
+.attribution {
+	color: hsl(235, 46%, 30%);
+}
